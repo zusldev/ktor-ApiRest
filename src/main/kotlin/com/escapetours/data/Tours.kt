@@ -1,3 +1,14 @@
-package com.escapetours.data.model
+package com.escapetours.data
 
-data class Tours()
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class Tours(
+    val id: Int,
+    val name: String,
+    val description: String,
+    val price: Double,
+    val imageUrl: String,
+    val rating: Double,
+    val city: String,
+)
